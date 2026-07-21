@@ -5,6 +5,7 @@ import Services from './components/Services.jsx'
 import Gallery from './components/Gallery.jsx'
 import Furniture from './components/Furniture.jsx'
 import Reviews from './components/Reviews.jsx'
+import Showcase from './components/Showcase.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import CookieConsent from './components/CookieConsent.jsx'
@@ -25,6 +26,7 @@ function App() {
         <Gallery />
         <Furniture />
         <Reviews />
+        <Showcase />
         <Contact />
       </main>
       <Footer />

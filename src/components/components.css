@@ -144,6 +144,7 @@
   align-items: center;
   overflow: hidden;
   background: #08090a;
+  z-index: 1;
 }
 
 .hero__video {
@@ -378,7 +379,7 @@
 }
 
 .hero__sub {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
   font-size: 18px;
   max-width: 520px;
   margin-bottom: 40px;
@@ -409,6 +410,7 @@
   background: var(--bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
+  z-index: 1;
 }
 
 .services__head {
@@ -535,6 +537,7 @@
   background: var(--bg-alt);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
+  z-index: 1;
 }
 
 .gallery__head h2 {
@@ -613,6 +616,7 @@
   background: var(--bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
+  z-index: 1;
 }
 
 .furniture__head h2 {
@@ -672,6 +676,7 @@
   background: var(--bg-alt);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
+  z-index: 1;
 }
 
 .reviews__head h2 {
@@ -747,11 +752,157 @@
   }
 }
 
+/* Showcase */
+.showcase {
+  background: var(--bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  z-index: 1;
+}
+
+.showcase__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.showcase__slider {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 50px rgba(20, 24, 28, 0.16);
+}
+
+.showcase__slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition:
+    opacity 0.9s ease,
+    transform 5s ease;
+}
+
+.showcase__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.showcase__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(0deg, rgba(8, 9, 10, 0.65) 0%, transparent 100%);
+}
+
+.showcase__arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(8, 9, 10, 0.35);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.showcase__arrow:hover {
+  background: var(--gold);
+  color: #14120a;
+  transform: scale(1.06);
+}
+
+.showcase__count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #fff;
+}
+
+.showcase__tag {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  background: rgba(181, 135, 47, 0.12);
+  padding: 5px 12px;
+  border-radius: 2px;
+  margin-top: 14px;
+}
+
+.showcase__copy h2 {
+  font-size: clamp(26px, 3.2vw, 38px);
+  margin: 14px 0 16px;
+}
+
+.showcase__copy p {
+  color: var(--text-dim);
+  max-width: 440px;
+  margin-bottom: 26px;
+}
+
+.showcase__dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 320px;
+}
+
+.showcase__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: var(--border-strong);
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.showcase__dot.is-active {
+  background: var(--gold);
+  transform: scale(1.5);
+}
+
+@media (max-width: 900px) {
+  .showcase__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .showcase__slider {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 /* Contact */
 .contact {
   background: var(--bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
+  z-index: 1;
 }
 
 .contact__grid {
@@ -861,12 +1012,15 @@
 
 /* Footer */
 .footer {
-  background: var(--bg-alt);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(253, 253, 253, 0.5)), url('../assets/32-piece-2.avif') center/cover no-repeat;
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border-top: 1px solid var(--teal);
+  border-top: 1px solid white;
   padding-top: 70px;
   color: var(--text);
+  position: sticky;
+  bottom: 0;
+  z-index: 0;
 }
 
 .footer__top {

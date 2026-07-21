@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import heroVideo from '../assets/videos/hero-1.mp4'
-import slide1 from '../assets/frameless-1.avif'
+import slide1 from '../assets/gym-wall-9.avif'
 import slide2 from '../assets/bathroom-wall-1.avif'
 import slide3 from '../assets/gym-wall-4.avif'
 import slide4 from '../assets/sitting-room-wall-1.avif'
@@ -31,8 +31,8 @@ function Hero() {
      
 
       <a href="#services" className="hero__scroll-hint">
-        <span>Scroll</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <span style={{ color: 'black' }}>Scroll</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </a>
