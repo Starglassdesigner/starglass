@@ -1,4 +1,4 @@
-import Logo from '../assets/5-star-logo.svg'
+import Logo from '../assets/5-star-logo.png'
 import SocialLinks from './SocialLinks'
 function Footer() {
   const year = new Date().getFullYear()

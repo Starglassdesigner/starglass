@@ -28,7 +28,7 @@ function Hero() {
         muted
         playsInline
       />
-      <div className="hero__scrim" />
+     
 
       <a href="#services" className="hero__scroll-hint">
         <span>Scroll</span>
