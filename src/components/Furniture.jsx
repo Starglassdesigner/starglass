@@ -8,14 +8,14 @@ import img17 from '../assets/image-17.jpeg'
 import img18 from '../assets/image-18.jpeg'
 
 const PIECES = [
-  { name: 'Hexagon nesting coffee tables', img: img11 },
-  { name: 'Bi-level black coffee table', img: img12 },
+  { name: 'Hexagon nesting coffee tables', img: img14 },
+  { name: 'Bi-level black coffee table', img: img16 },
   { name: 'Round marble coffee table', img: img13 },
-  { name: 'Boxed black coffee table', img: img14 },
+  { name: 'Boxed black coffee table', img: img18 },
   { name: 'Geometric marble-top side table', img: img15 },
-  { name: 'Bi-level gold coffee table', img: img16 },
+  { name: 'Bi-level gold coffee table', img: img12 },
   { name: 'Gold hexagon nesting tables', img: img17 },
-  { name: 'Custom glass coffee table', img: img18 },
+  { name: 'Custom glass coffee table', img: img11 },
 ]
 
 function Furniture() {
