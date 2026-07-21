@@ -1,5 +1,5 @@
 import Logo from '../assets/5-star-logo.svg'
-
+import SocialLinks from './SocialLinks'
 function Footer() {
   const year = new Date().getFullYear()
 
@@ -42,7 +42,7 @@ function Footer() {
 
       <div className="container footer__bottom">
         <span>&copy; {year} 5 Star Glass Designer. All rights reserved.</span>
-        <span>Designed with five-star craftsmanship.</span>
+        <SocialLinks />
       </div>
     </footer>
   )

@@ -4,7 +4,7 @@ import slide1 from '../assets/frameless-1.avif'
 import slide2 from '../assets/bathroom-wall-1.avif'
 import slide3 from '../assets/gym-wall-4.avif'
 import slide4 from '../assets/sitting-room-wall-1.avif'
-import slide5 from '../assets/pool-glass-fencing-1.avif'
+import slide5 from '../assets/pool-glass-fencing-1.png'
 
 const SLIDES = [slide1, slide2, slide3, slide4, slide5]
 
@@ -29,9 +29,7 @@ function Hero() {
         playsInline
       />
       <div className="hero__scrim" />
-     
 
-      
       <a href="#services" className="hero__scroll-hint">
         <span>Scroll</span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
