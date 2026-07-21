@@ -1,6 +1,6 @@
 # 5 Star Glass Designer — website
 
-A React + Vite site for 5starglassdesigner.com, built with the same dark,
+A React + Vite site for 5starglassdesigners.com, built with the same dark,
 cinematic, editorial structure as ferrari.com (full-bleed hero, alternating
 service rows, minimal uppercase nav that solidifies on scroll) using the
 brand's own teal + gold palette instead of Ferrari red.

@@ -10,12 +10,14 @@ import Footer from './components/Footer.jsx'
 import CookieConsent from './components/CookieConsent.jsx'
 import CookieSettingsButton from './components/CookieSettingsButton.jsx'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
+import SEO from './components/SEO.jsx'
 
 function App() {
   const [cookiesOpen, setCookiesOpen] = useState(false)
 
   return (
     <>
+      <SEO />
       <Header />
       <main>
         <Hero />

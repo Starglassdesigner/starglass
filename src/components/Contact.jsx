@@ -26,8 +26,8 @@ function Contact() {
             </li>
             <li>
               <span>Email</span>
-              <a href="mailto:info@5starglassdesigner.com">
-                info@5starglassdesigner.com
+              <a href="mailto:info@5starglassdesigners.com">
+                info@5starglassdesigners.com
               </a>
             </li>
             <li>

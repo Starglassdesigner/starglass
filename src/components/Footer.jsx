@@ -33,8 +33,8 @@ function Footer() {
         <div className="footer__col">
           <h4>Contact</h4>
           <a href="tel:+27691264148">+27 69 126 4148</a>
-          <a href="mailto:info@5starglassdesigner.com">
-            info@5starglassdesigner.com
+          <a href="mailto:info@5starglassdesigners.com">
+            info@5starglassdesigners.com
           </a>
           <a href="#contact">Get a free quote</a>
         </div>
